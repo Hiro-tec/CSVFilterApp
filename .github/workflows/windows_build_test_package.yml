@@ -43,7 +43,7 @@ jobs:
           copy dist\csv_filter_gui.exe package\
           if exist input_data_large.csv copy input_data_large.csv package\
           if exist filter_data_large.csv copy filter_data_large.csv package\
-          copy README.txt package\
+          copy README_for_package.txt package\
           powershell Compress-Archive -Path package\* -DestinationPath csv_filter_package.zip
 
       - name: Upload artifact (ZIP)
