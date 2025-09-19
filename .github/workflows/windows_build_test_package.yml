@@ -37,7 +37,7 @@ jobs:
           Write-Host "Smoke test finished: exe launched without error."
 
       - name: Prepare release package
-        shell: pwsh
+        shell: cmd
         run: |
           mkdir package
           copy dist\csv_filter_gui.exe package\
