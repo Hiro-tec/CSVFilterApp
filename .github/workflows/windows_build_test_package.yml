@@ -28,12 +28,13 @@ jobs:
         run: |
           pyinstaller --onefile --windowed csv_filter_gui.py
 
-      - name: Smoke test (exe starts?)
+      - name: Run smoke test
+        shell: pwsh
         run: |
-          echo "Launching exe for smoke test..."
-          start /B dist\csv_filter_gui.exe
-          timeout 5 >nul
-          echo "Smoke test finished: exe launched without error."
+          Write-Host "Launching exe for smoke test..."
+          Start-Process "dist\csv_filter_gui.exe"
+          Start-Sleep -Seconds 5
+          Write-Host "Smoke test finished: exe launched without error."
 
       - name: Prepare release package
         run: |
