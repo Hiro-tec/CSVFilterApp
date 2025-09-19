@@ -1,0 +1,22 @@
+id,name,brand,price,weight,battery,os
+1,ノートPC A,TechBrand,120000,1.2,12,Windows
+2,ノートPC B,Speedy,98000,1.5,10,Windows
+3,ノートPC C,LightCo,150000,1.0,15,MacOS
+4,ノートPC D,EcoPC,85000,1.8,9,Linux
+5,ノートPC E,TechBrand,130000,1.3,11,Windows
+6,ノートPC F,Speedy,102000,1.4,10,Windows
+7,ノートPC G,LightCo,155000,1.1,14,MacOS
+8,ノートPC H,EcoPC,88000,1.7,8,Linux
+9,ノートPC I,TechBrand,125000,1.2,12,Windows
+10,ノートPC J,Speedy,95000,1.6,9,Windows
+11,ノートPC K,LightCo,160000,1.0,15,MacOS
+12,ノートPC L,EcoPC,90000,1.9,9,Linux
+13,ノートPC M,TechBrand,128000,1.3,12,Windows
+14,ノートPC N,Speedy,97000,1.5,10,Windows
+15,ノートPC O,LightCo,152000,1.1,15,MacOS
+16,ノートPC P,EcoPC,86000,1.8,8,Linux
+17,ノートPC Q,TechBrand,135000,1.2,13,Windows
+18,ノートPC R,Speedy,99000,1.4,10,Windows
+19,ノートPC S,LightCo,158000,1.0,14,MacOS
+20,ノートPC T,EcoPC,87000,1.7,9,Linux
+

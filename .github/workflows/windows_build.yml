@@ -29,7 +29,7 @@ jobs:
           pyinstaller --onefile --windowed csv_filter_gui.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # ← 修正！
         with:
           name: csv-filter-exe
           path: dist/csv_filter_gui.exe
