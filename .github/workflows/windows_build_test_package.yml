@@ -24,9 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build EXE
+      - name: Build EXE with icon
         run: |
-          pyinstaller --onefile --windowed csv_filter_gui.py
+          pyinstaller --onefile --windowed --icon=icon.ico csv_filter_gui.py
 
       - name: Run smoke test
         shell: pwsh
@@ -44,6 +44,7 @@ jobs:
           if exist input_data_large.csv copy input_data_large.csv package\
           if exist filter_data_large.csv copy filter_data_large.csv package\
           copy README_for_package.txt package\
+          if exist icon.ico copy icon.ico package\
           powershell Compress-Archive -Path package\* -DestinationPath csv_filter_package.zip
 
       - name: Upload artifact (ZIP)
